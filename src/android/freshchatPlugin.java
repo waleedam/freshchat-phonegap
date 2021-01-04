@@ -130,6 +130,7 @@ public class freshchatPlugin extends CordovaPlugin {
                     String appId = initArgs.getString("appId");
                     String appKey = initArgs.getString("appKey");
 
+                    Freshchat.setImageLoader(com.freshchat.consumer.sdk.j.af.aw(cordovaContext));
                     freshchatConfig = new FreshchatConfig(appId,appKey);
 
                     if(initArgs.has("domain")) {
